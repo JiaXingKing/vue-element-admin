@@ -1,5 +1,5 @@
 import { asyncRoutes, constantRoutes } from '@/router'
-
+console.log(asyncRoutes)
 /**
  * Use meta.role to determine if the current user has permission
  * @param roles
@@ -43,6 +43,7 @@ const mutations = {
   SET_ROUTES: (state, routes) => {
     state.addRoutes = routes
     state.routes = constantRoutes.concat(routes)
+    // state.routes = routes
   }
 }
 
